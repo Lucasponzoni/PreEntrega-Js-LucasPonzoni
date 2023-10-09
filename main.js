@@ -42,6 +42,7 @@ function jugar() {
     }
 
     console.log(`Puntaje: Jugador ${puntaje} Vs Consola ${puntajeConsola}`);
+    console.log("---------------")
 
     const jugarNuevamente = confirm("¿Quieres jugar de nuevo?");
     if (!jugarNuevamente) {
