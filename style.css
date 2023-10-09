@@ -6,7 +6,7 @@
     font-family: 'Bricolage Grotesque', sans-serif;
 }
 
-.titulo{
+.titulo {
     font-size: 3rem;
     display: flex;
     justify-content: center;
@@ -20,6 +20,16 @@ h2, h3{
     display: flex;
     justify-content: center;
     align-items: center; 
+}
+
+@media screen and (max-width: 600px) {
+    .titulo {
+        font-size: 2rem;
+    }
+
+    h2, h3{
+        font-size: 1rem
+    }
 }
 
 .point{

@@ -1,3 +1,5 @@
+
+
 function jugar() {
 
   let puntaje = 0
