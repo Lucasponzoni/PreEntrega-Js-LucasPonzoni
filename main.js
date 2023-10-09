@@ -1,4 +1,8 @@
 function jugar() {
+
+  let puntaje = 0
+  let puntajeConsola = 0
+
   while (true) {
     let jugador;
     let consola;
@@ -21,16 +25,21 @@ function jugar() {
     console.log("Consola eligió: " + consola);
 
     if (jugador === consola) {
-      console.log("Empate");
+      console.log("Empate")
+      puntaje++, puntajeConsola++;;
     } else if (
       (jugador === "piedra" && consola === "tijera") ||
       (jugador === "papel" && consola === "piedra") ||
       (jugador === "tijera" && consola === "papel")
     ) {
       console.log("¡Ganaste!");
+      puntaje++;
     } else {
       console.log("La consola gana.");
+      puntajeConsola++;
     }
+
+    console.log(`Puntaje: Jugador ${puntaje} Vs Consola ${puntajeConsola}`);
 
     const jugarNuevamente = confirm("¿Quieres jugar de nuevo?");
     if (!jugarNuevamente) {
